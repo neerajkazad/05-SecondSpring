@@ -1,4 +1,5 @@
 package com.ss.beans;
+//Amazon.java
 
 public class Amazon {
 	private ITransportManager transportManager;
