@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="amazon" class="com.ss.beans.Amazon" >
+		<property name="transportManager" ref="fftm" />
+	</bean>
+    <bean id="bdtm" class="com.ss.beans.BlueDartTransportManagerImpl" />
+    <bean id="fftm" class="com.ss.beans.FirstflightTransportImpl" />
+</beans>
